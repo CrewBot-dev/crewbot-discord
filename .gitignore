@@ -1,0 +1,5 @@
+# Yea lets not weigh our repo down with the Sun... I mean node_modules
+node_modules/
+
+# TSC Build output
+build/

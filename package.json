@@ -1,0 +1,29 @@
+{
+    "name": "crewbot-discord",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/CrewBot-dev/crewbot-discord",
+    "author": "Haleon, Ray Redondo, Isaac Kilbourne",
+    "license": "BSD+Patent",
+    "private": true,
+    "scripts": {
+        "dev": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts",
+        "build": "tsc --outDir ./build",
+        "start": "node ./build/index.js"
+    },
+    "dependencies": {
+        "discord.js": "^14.6.0"
+    },
+    "devDependencies": {
+        "typescript": "^4.8.4",
+        "@types/node": "^18.11.3",
+        "ts-node-dev": "^2.0.0"
+    },
+    "prettier": {
+        "tabWidth": 2,
+        "endOfLine": "lf",
+        "arrowParens": "always",
+        "singleQuote": true,
+        "printWidth": 100
+    }
+}
