@@ -3,8 +3,7 @@
     "target": "ES6",
     "module": "commonjs",
     "strict": true,
-    "allowSyntheticDefaultImports": false,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
   }
 }

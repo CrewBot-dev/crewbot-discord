@@ -1,0 +1,7 @@
+discord:
+  api_token: ""
+
+testing:
+  debug: true
+  log_level: ''
+  guild: ''
