@@ -14,10 +14,14 @@ interface ConfigType {
   };
 }
 
-const Config: ConfigType = (() => {
+const Config: Readonly<ConfigType> = (() => {
   const configPath = path.join(__dirname, '..', 'config.yaml');
+
   const fileContents = readFileSync(configPath).toString('utf-8');
-  return yaml.parse(fileContents) as ConfigType;
+  const configObject = yaml.parse(fileContents) as ConfigType;
+
+  // Config should be Readonly.
+  return Object.freeze(configObject);
 })();
 
 export { Config };
